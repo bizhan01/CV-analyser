@@ -1,0 +1,38 @@
+/* :: 9.0 Gallery Area CSS */
+.single-gallery-item {
+  position: relative;
+  z-index: 1;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; }
+  .single-gallery-item::after {
+    background-color: rgba(0, 108, 255, 0.75);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    content: '';
+    opacity: 0;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+  .single-gallery-item:hover::after {
+    opacity: 1; }
+  .single-gallery-item .view-more-btn {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 9;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+    .single-gallery-item .view-more-btn a {
+      background-color: transparent;
+      font-size: 16px;
+      color: #ffffff;
+      display: block;
+      box-shadow: none;
+      font-weight: 700;
+      opacity: 0; }
+  .single-gallery-item:hover .view-more-btn a {
+    opacity: 1; }
+/*Logo Galary End*/
